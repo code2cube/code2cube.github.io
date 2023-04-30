@@ -1,0 +1,65 @@
+:root {
+    --bg: skyblue;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#index-body {
+    background-color: var(--bg);
+}
+
+.navbar-nav {
+    backdrop-filter: blur(5px);
+}
+
+.page {
+    height: 100vh;
+}
+
+#index-page-1 {
+    background-color: var(--bg);
+}
+
+#section-2 {
+    height: 7vh;
+    background-color: red;
+}
+
+#index-page-2 {
+    background-color: red;
+}
+
+#section-3 {
+    height: 7vh;
+    background-color: orange;
+}
+
+#index-page-3 {
+    background-color: orange;
+}
+
+#section-4 {
+    height: 7vh;
+    background-color: purple;
+}
+
+#index-page-4 {
+    background-color: purple;
+}
+
+#section-5 {
+    height: 7vh;
+    background-color: yellow;
+}
+
+#index-page-5 {
+    background-color: yellow;
+}
+
+span,i {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
