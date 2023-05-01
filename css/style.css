@@ -34,8 +34,10 @@ span,i {
 }
 
 #home-logo {
-    height: 40vh;
-    width: 40vw;
+    height: 50vh;
+    width: 25vw;
+    border: 5px solid white;
+    border-radius: 50%;
 }
 
 #name-header {
@@ -107,4 +109,6 @@ span,i {
 
 .project-image {
     width: 30vw;
+    border: 5px solid white;
+    border-radius: 10px;
 }
