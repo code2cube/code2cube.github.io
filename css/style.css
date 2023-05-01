@@ -6,7 +6,7 @@ html {
     scroll-behavior: smooth;
 }
 
-#index-body {
+#index-body, #project-body {
     background-color: var(--bg);
 }
 
@@ -17,6 +17,12 @@ html {
 .navbar-toggler {
     height: 5vh;
     width: 5vh;
+}
+
+span,i {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .page {
@@ -78,10 +84,27 @@ html {
 
 #index-page-5 {
     background-color: var(--bg);
+    height: 90vh;
 }
 
-span,i {
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
+#project-page {
+    height: 80vh;
+}
+
+.project-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.project-icon {
+    color: white;
+}
+
+.project-button-wrapper {
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.project-image {
+    width: 30vw;
 }
