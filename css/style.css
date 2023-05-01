@@ -34,8 +34,8 @@ span,i {
 }
 
 #home-logo {
-    height: 50vh;
-    width: 25vw;
+    height: 50%;
+    width: 40%;
     border: 5px solid white;
     border-radius: 50%;
 }
