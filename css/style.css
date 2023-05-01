@@ -29,7 +29,7 @@ span,i {
     height: 100vh;
 }
 
-#index-page-1 {
+#home {
     background-color: var(--bg);
 }
 
@@ -52,39 +52,39 @@ span,i {
     font-size: 3vw;
 }
 
-#section-2 {
+#about {
     height: 6vh;
     background-color: var(--bg);
 }
 
-#index-page-2 {
+#about-page {
     background-color: var(--bg);
 }
 
-#section-3 {
+#projects {
     height: 6vh;
     background-color: var(--bg);
 }
 
-#index-page-3 {
+#projects-page {
     background-color: var(--bg);
 }
 
-#section-4 {
+#resume {
     height: 6vh;
     background-color: var(--bg);
 }
 
-#index-page-4 {
+#resume-page {
     background-color: var(--bg);
 }
 
-#section-5 {
+#contact {
     height: 6vh;
     background-color: var(--bg);
 }
 
-#index-page-5 {
+#contact-page {
     background-color: var(--bg);
     height: 90vh;
 }
