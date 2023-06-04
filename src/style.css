@@ -72,13 +72,14 @@ span,i {
 
 .project-item img {
     width: var(--project-img-size);
+    height: var(--project-img-size);
     border-radius: 10px;
 }
 
 #contact {
     padding: var(--page-top-padding);
     height: 90vh;
-    color: var(--secondary-bg-color);
+    color: white;
     background-color: var(--main-bg-color);
     font-size: var(--main-font-size);
 }

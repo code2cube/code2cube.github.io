@@ -1,8 +1,35 @@
+function sep10FreedomProject() {
+    Swal.fire({
+        title: 'SEP10 Freedom Project',
+        imageUrl: 'src/img/projects/sep10-freedom-project.png',
+        imageHeight: 300,
+        imageWidth: 300,
+        imageAlt: 'SEP10 Freedom Project Image',
+        showDenyButton: true,
+        confirmButtonText: 'Code',
+        denyButtonText: `Preview`,
+        }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            const link = document.createElement('a');
+            link.href = 'https://github.com/samuels0052/sep10-freedom-project';
+            link.target = '_blank';
+            link.click();
+        } else if (result.isDenied) {
+          const link = document.createElement('a');
+          link.href = "https://samuels0052.github.io/sep10-freedom-project"
+          link.target = '_blank';
+          link.click();
+        }
+      })
+}
+
 function icecubeProject() {
     Swal.fire({
         title: 'Ice Cube Bot',
         imageUrl: 'src/img/projects/ice_cube.png',
         imageHeight: 300,
+        imageWidth: 300,
         imageAlt: 'Ice Cube Bot Logo',
         confirmButtonText: 'Code',
         }).then((result) => {
@@ -55,6 +82,20 @@ async function sendContact(ev) {
     Swal.fire('There was an error! Try again later!');
   }
 }
+
+window.addEventListener('scroll', function() {
+  var section1 = document.getElementById('projects-section');
+  var section2 = document.getElementById('contact-section');
+
+  var rect1 = section1.getBoundingClientRect();
+  var rect2 = section2.getBoundingClientRect();
+
+  if (rect1.top >= 0 && rect1.bottom <= window.innerHeight) {
+    console.log('Scrolling in projects-section');
+  } else if (rect2.top >= 0 && rect2.bottom <= window.innerHeight) {
+    console.log('Scrolling in contact-section');
+  }
+});
 
 // function icecubeProject() {
 //     Swal.fire({
