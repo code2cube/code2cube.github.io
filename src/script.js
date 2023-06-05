@@ -83,29 +83,60 @@ async function sendContact(ev) {
   }
 }
 
-window.addEventListener('scroll', function() {
-  var section1 = document.getElementById('projects-section');
-  var section2 = document.getElementById('contact-section');
+//https://codepen.io/josephwong2004/pen/ExgoKde?editors=1010
+const carouselText = [
+  {text: "Dental Assistant", color: "white"},
+  {text: "Developer", color: "white"},
+  {text: "Professional Human", color: "white"}
+]
 
-  var rect1 = section1.getBoundingClientRect();
-  var rect2 = section2.getBoundingClientRect();
-
-  var projectsNav = document.getElementById("projects-nav");
-  var contactNav = document.getElementById("contact-nav");
-
-  if (rect1.top >= 0 && rect1.bottom <= window.innerHeight) {
-    console.log('Scrolling in projects-section');
-    projectsNav.style.color = "white";
-    contactNav.style.color = "black";
-  } else if (rect2.top >= 0 && rect2.bottom <= window.innerHeight) {
-    console.log('Scrolling in contact-section');
-    projectsNav.style.color = "black";
-    contactNav.style.color = "white";
-  } else {
-    projectsNav.style.color = "black";
-    contactNav.style.color = "black";
-  }
+$( document ).ready(async function() {
+  carousel(carouselText, "#feature-text")
 });
+
+async function typeSentence(sentence, eleRef, delay = 100) {
+  const letters = sentence.split("");
+  let i = 0;
+  while(i < letters.length) {
+    await waitForMs(delay);
+    $(eleRef).append(letters[i]);
+    i++
+  }
+  return;
+}
+
+async function deleteSentence(eleRef) {
+  const sentence = $(eleRef).html();
+  const letters = sentence.split("");
+  let i = 0;
+  while(letters.length > 0) {
+    await waitForMs(100);
+    letters.pop();
+    $(eleRef).html(letters.join(""));
+  }
+}
+
+async function carousel(carouselList, eleRef) {
+    var i = 0;
+    while(true) {
+      updateFontColor(eleRef, carouselList[i].color)
+      await typeSentence(carouselList[i].text, eleRef);
+      await waitForMs(1500);
+      await deleteSentence(eleRef);
+      await waitForMs(500);
+      i++
+      if(i >= carouselList.length) {i = 0;}
+    }
+}
+
+function updateFontColor(eleRef, color) {
+  $(eleRef).css('color', color);
+}
+
+function waitForMs(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
 
 // function icecubeProject() {
 //     Swal.fire({
