@@ -31,6 +31,10 @@ span,i {
     height: 11vh;
 }
 
+.poop {
+    border: transparent !important;
+}
+
 .navbar-collapse {
     background-color: var(--secondary-bg-color);
     padding: 0 1em;
