@@ -90,10 +90,20 @@ window.addEventListener('scroll', function() {
   var rect1 = section1.getBoundingClientRect();
   var rect2 = section2.getBoundingClientRect();
 
+  var projectsNav = document.getElementById("projects-nav");
+  var contactNav = document.getElementById("contact-nav");
+
   if (rect1.top >= 0 && rect1.bottom <= window.innerHeight) {
     console.log('Scrolling in projects-section');
+    projectsNav.style.color = "white";
+    contactNav.style.color = "black";
   } else if (rect2.top >= 0 && rect2.bottom <= window.innerHeight) {
     console.log('Scrolling in contact-section');
+    projectsNav.style.color = "black";
+    contactNav.style.color = "white";
+  } else {
+    projectsNav.style.color = "black";
+    contactNav.style.color = "black";
   }
 });
 
@@ -102,6 +112,7 @@ window.addEventListener('scroll', function() {
 //         title: 'Ice Cube Bot',
 //         imageUrl: 'src/img/projects/ice_cube.png',
 //         imageHeight: 300,
+//         imageWidth: 300,
 //         imageAlt: 'Ice Cube Bot Logo',
 //         showDenyButton: true,
 //         confirmButtonText: 'Save',
