@@ -10,6 +10,12 @@
     --project-img-size: 300px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    font-family: 'Courgette', cursive;
+}
+
 .navbar-toggler {
     height: 5vh;
     width: 5vh;
