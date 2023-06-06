@@ -87,7 +87,8 @@ async function sendContact(ev) {
 const carouselText = [
   {text: "Dental Assistant", color: "white"},
   {text: "Developer", color: "white"},
-  {text: "Professional Human", color: "white"}
+  {text: "Professional Human", color: "white"},
+  {text: "Philosopher", color: "white"},
 ]
 
 $( document ).ready(async function() {
