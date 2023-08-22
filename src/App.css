@@ -1,0 +1,138 @@
+:root {
+    --mbc: #90DDF0;
+    --sbc: #0A090C;
+    --main-font-size: 25px;
+    --fc: #F0EDEE;
+}
+
+.navbar-toggler {
+    height: 5vh;
+    width: 5vh;
+}
+
+nav span,i {
+    color: var(--fc);
+    font-size: var(--main-font-size);
+    font-weight: bold;
+}
+
+#navbar-wrapper {
+    background-color: var(--sbc);
+    padding: 1rem;
+    height: 11vh;
+}
+
+.navbar-collapse {
+    background-color: var(--sbc);
+    padding: 0 1em;
+}
+
+.poop {
+    background-color: var(--fc);
+}
+
+body {
+    margin: 0;
+    background-color: var(--mbc);
+}
+
+#home {
+    height: 80vh;
+    background-color: var(--sbc);
+    color: var(--fc);
+    padding-top: 40vh;
+}
+
+#about {
+    height: 100vh;
+    color: var(--sbc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    text-justify: inter-word;
+    background: linear-gradient(to top, var(--mbc) 20%, var(--sbc));
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.5em;
+}
+
+.lol {
+    width: 70vw;
+}
+
+.skills-icons {
+    color: black;
+}
+
+
+#contact {
+    height: 90vh;
+    background-color: var(--sbc);
+    color: var(--sbc);
+    padding-top: 12vh;
+}
+
+#contact-form-body {
+    background-color: var(--mbc);
+    padding: 6vh 4vh 2vh 4vh;
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: var(--sbc);
+    color: var(--fc);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 2000px) {
+    #about {
+      height: 140vh;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #about {
+      height: 180vh;
+    }
+}
+
+@media only screen and (max-width: 826px) {
+    #about {
+      height: 220vh;
+    }
+}
+
+@media only screen and (max-width: 586px) {
+    #about {
+      height: 260vh;
+    }
+}
+
+@media only screen and (max-width: 434px) {
+    #about {
+      height: 300vh;
+    }
+}
+
+@media only screen and (max-width: 356px) {
+    #about {
+      height: 360vh;
+    }
+}
+
+@media only screen and (max-width: 304px) {
+    #about {
+      height: 400vh;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    #about {
+      height: 440vh;
+    }
+}
