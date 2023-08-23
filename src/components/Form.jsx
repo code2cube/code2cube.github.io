@@ -47,7 +47,7 @@ function Form() {
 
     return (
         <div className="container" id="contact-form-body">
-            <h1>Contact Form</h1>
+            <h1 class="pb-5">Contact Form</h1>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="nameForm" className="form-label">Name</label>
@@ -61,7 +61,7 @@ function Form() {
                     <label htmlFor="messageForm" className="form-label">Message</label>
                     <textarea className="form-control" id="messageForm" rows="6" required></textarea>
                 </div>
-                <button type="submit" className="btn btn-dark">Submit</button>
+                <button type="submit" className="btn btn-light">Submit</button>
             </form>
         </div>
     );

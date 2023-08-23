@@ -6,8 +6,8 @@ function Content() {
     return (
         <div>
             <div className="container-fluid text-center" id="home">
-                <h1 class="display-1">Samuel Sharivker</h1>
-                <h6 class="display-6">Professional Human</h6>
+                <h1 class="display-1 home-text">Samuel Sharivker</h1>
+                <h6 class="display-6 home-text">Professional Human</h6>
             </div>
             <div className="container-fluid" id="about">
             <div class="card mb-3 lol">

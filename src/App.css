@@ -1,8 +1,9 @@
 :root {
-    --mbc: #90DDF0;
+    --mbc: #710C04;
     --sbc: #0A090C;
     --main-font-size: 25px;
     --fc: #F0EDEE;
+    --mshadow: 5px 5px 6px var(--mbc);
 }
 
 .navbar-toggler {
@@ -43,6 +44,10 @@ body {
     padding-top: 40vh;
 }
 
+.home-text {
+    text-shadow: var(--mshadow);
+}
+
 #about {
     height: 100vh;
     color: var(--sbc);
@@ -51,10 +56,19 @@ body {
     align-items: center;
     text-align: justify;
     text-justify: inter-word;
-    background: linear-gradient(to top, var(--mbc) 20%, var(--sbc));
+    hyphens: auto;
+    background: linear-gradient(to top, var(--mbc) 10%, var(--sbc));
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 1.5em;
+}
+
+#about h1 {
+    text-shadow: 2px 2px 3px var(--mbc);
+}
+
+#about h4 {
+    text-shadow: 1px 1px 2px var(--mbc);
 }
 
 .lol {
@@ -69,15 +83,23 @@ body {
 #contact {
     height: 90vh;
     background-color: var(--sbc);
-    color: var(--sbc);
-    padding-top: 12vh;
+    color: var(--fc);
+    padding-top: 5vh;
+}
+
+#contact h1 {
+    text-shadow: var(--mshadow);
 }
 
 #contact-form-body {
-    background-color: var(--mbc);
+    /* background-color: var(--mbc); */
     padding: 6vh 4vh 2vh 4vh;
     font-size: 2em;
     border-radius: 10px;
+}
+
+.form-label {
+    text-shadow: var(--mshadow);
 }
 
 footer {
@@ -87,6 +109,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer h6 {
+    text-shadow: var(--mshadow);
 }
 
 @media only screen and (max-width: 484px) {
