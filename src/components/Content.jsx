@@ -1,4 +1,5 @@
 import meIMG from '../img/me.png';
+import Experience from './Experience';
 import Form from './Form';
 import Footer from './Footer';
 
@@ -31,20 +32,7 @@ function Content() {
                         <a href="mailto:sjsharivker@hotmail.com" target="_blank" rel="noreferrer"><i class="ms-1 bi bi-envelope-fill skills-icons"></i></a>
                     </div>
                     <hr className=""></hr>
-                    <h4 class="card-text text-center">Experience with...</h4>
-                    <div className="text-center">
-                        <i class="ms-1 devicon-html5-plain skills-icons"></i>
-                        <i class="ms-1 devicon-css3-plain skills-icons"></i>
-                        <i class="ms-1 devicon-bootstrap-plain skills-icons"></i>
-                        <i class="ms-1 devicon-git-plain skills-icons"></i>
-                        <i class="ms-1 devicon-nodejs-plain skills-icons"></i>
-                        <i class="ms-1 devicon-electron-original skills-icons"></i>
-                        <i class="ms-1 devicon-react-original skills-icons"></i>
-                        <i class="ms-1 devicon-unity-original skills-icons"></i>
-                        <i class="ms-1 devicon-python-plain skills-icons"></i>
-                        <i class="ms-1 devicon-sqlite-plain skills-icons"></i>
-                        <i class="ms-1 devicon-markdown-original skills-icons"></i><br></br>
-                    </div>
+                    <Experience />
                 </div>
                 </div>
             </div>
