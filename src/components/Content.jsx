@@ -29,7 +29,7 @@ function Content() {
                         <a href="https://www.instagram.com/live2cube" target="_blank" rel="noreferrer"><i class="ms-1 bi bi-instagram skills-icons"></i></a>
                         <a href="https://www.twitch.tv/live2cube" target="_blank" rel="noreferrer"><i class="ms-1 bi bi-twitch skills-icons"></i></a>
                         <a href="https://github.com/code2cube" target="_blank" rel="noreferrer"><i class="ms-1 bi bi-github skills-icons"></i></a>
-                        <a href="mailto:sjsharivker@hotmail.com" target="_blank" rel="noreferrer"><i class="ms-1 bi bi-envelope-fill skills-icons"></i></a>
+                        <a href="mailto:sam@samuelsharivker.com" target="_blank" rel="noreferrer"><i class="ms-1 bi bi-envelope-fill skills-icons"></i></a>
                     </div>
                     <hr className=""></hr>
                     <Experience />

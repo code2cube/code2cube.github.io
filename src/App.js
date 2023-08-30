@@ -1,12 +1,18 @@
-import './App.css';
-import Nav from './components/Nav';
-import Content from './components/Content';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from './pages/Main';
+import Tools from './pages/Tools';
+import NoPage from './pages/NoPage';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <Content />
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Main />} />
+          <Route path="/tools" element={<Tools />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
