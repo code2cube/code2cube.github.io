@@ -15,6 +15,9 @@ function Nav() {
                                 <a class="nav-link" href="#contact"><i class="bi bi-envelope-fill"></i><span> Contact</span></a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="/tools"><i class="bi bi-tools"></i><span> Tools</span></a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="https://github.com/code2cube/projects" target="_blank" rel="noreferrer"><i class="bi bi-file-earmark-code-fill"></i><span> Projects</span></a>
                             </li>
                             <li class="nav-item">
