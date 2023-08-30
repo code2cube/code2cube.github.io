@@ -3,7 +3,7 @@ function Nav() {
         <div class="container-fluid sticky-top" id="navbar-wrapper">
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><span id="brand_span">live2cube</span></a>
+                    <a class="navbar-brand" href="#App"><span id="brand_span">live2cube</span></a>
                     <button class="navbar-toggler poop" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">

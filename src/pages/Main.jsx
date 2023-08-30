@@ -4,7 +4,7 @@ import Content from '../components/Content';
 
 function Main() {
     return (
-        <div>
+        <div id="App">
             <Nav />
             <Content />
         </div>
