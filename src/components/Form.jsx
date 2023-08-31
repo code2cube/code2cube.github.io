@@ -49,7 +49,7 @@ function Form() {
         <div className="container" id="contact-form-body">
             <h1 class="pb-5">Contact Form</h1>
             {/* <form onSubmit={handleSubmit}> */}
-            <form action="https://formsubmit.co/sjsharivker@gmail.com" method="POST">
+            <form action="https://formsubmit.co/sam@samuelsharivker.com" method="POST">
                 <div className="mb-3">
                     <label htmlFor="nameForm" className="form-label">Name</label>
                     <input name="name" type="text" className="form-control" id="nameForm" placeholder="John Doe" required/>
