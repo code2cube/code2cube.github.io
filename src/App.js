@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './pages/Main';
-import Tools from './pages/Tools';
+import Contact from './pages/Contact';
 import NoPage from './pages/NoPage';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Main />} />
-          <Route path="/tools" element={<Tools />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>
