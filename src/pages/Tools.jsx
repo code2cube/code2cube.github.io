@@ -1,7 +1,15 @@
+//import Nav from '../components/Nav';
+
 function Tools() {
+    const jsonExample = {
+        name: 'John Doe',
+        age: 30,
+        location: 'Example City',
+      };
+
     return (
-        <div>
-            <h1>tools</h1>
+        <div id="App">
+        {JSON.stringify(jsonExample, null, 2)}
         </div>
     )
 }
