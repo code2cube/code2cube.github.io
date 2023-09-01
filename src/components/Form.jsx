@@ -27,8 +27,8 @@ function Form() {
                     <textarea name="message" className="form-control" id="messageForm" rows="6" required></textarea>
                 </div>
                 <input type="hidden" name="_next" value="https://samuelsharivker.com/thanks" />
-                <input type="hidden" name="_subject" value={`${input} submitted a form!`} />
-                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_subject" value={`New Message From ${input}!`} />
+                <input type="hidden" name="_template" value="box" />
                 <button type="submit" className="btn btn-light">Submit</button>
             </form>
         </div>
