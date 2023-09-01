@@ -28,7 +28,7 @@ function Form() {
                 </div>
                 <input type="hidden" name="_next" value="https://samuelsharivker.com/thanks" />
                 <input type="hidden" name="_subject" value={`${input} submitted a form!`} />
-                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_template" value="table" />
                 <button type="submit" className="btn btn-light">Submit</button>
             </form>
         </div>
