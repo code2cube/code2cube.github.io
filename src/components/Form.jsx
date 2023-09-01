@@ -27,7 +27,7 @@ function Form() {
                     <textarea name="Message" className="form-control" id="messageForm" rows="6" required></textarea>
                 </div>
                 <div className="mb-3">
-                    <input type="file" name="attachment" className="form-control" accept="image/png, image/jpeg" />
+                    <input type="file" name="attachment" className="form-control" accept=".pdf, .png, .svg, .txt, .jpg, .jpeg" />
                 </div>
                 <input type="hidden" name="_next" value="https://samuelsharivker.com/thanks" />
                 <input type="hidden" name="_subject" value={`New Message From ${input}!`} />
