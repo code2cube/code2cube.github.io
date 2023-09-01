@@ -13,7 +13,7 @@ function Form() {
     return (
         <div className="container" id="contact-form-body">
             <h1 className="pb-5">Contact Form</h1>
-            <form action="https://formsubmit.co/sam@samuelsharivker.com" method="POST">
+            <form action="https://formsubmit.co/sam@samuelsharivker.com" method="POST" enctype="multipart/form-data">
                 <div className="mb-3">
                     <label htmlFor="nameForm" className="form-label">Name</label>
                     <input name="Name" type="text" className="form-control" id="nameForm" placeholder="John Doe" required />
@@ -25,6 +25,9 @@ function Form() {
                 <div className="mb-3">
                     <label htmlFor="messageForm" className="form-label">Message</label>
                     <textarea name="Message" className="form-control" id="messageForm" rows="6" required></textarea>
+                </div>
+                <div className="mb-3">
+                    <input type="file" name="attachment" className="form-control" accept=".pdf, .png, .svg, .txt, .jpg, .jpeg" />
                 </div>
                 <input type="hidden" name="_next" value="https://samuelsharivker.com/thanks" />
                 <input type="hidden" name="_subject" value={`New Message From ${input}!`} />
