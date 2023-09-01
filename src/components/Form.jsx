@@ -16,15 +16,15 @@ function Form() {
             <form action="https://formsubmit.co/sam@samuelsharivker.com" method="POST">
                 <div className="mb-3">
                     <label htmlFor="nameForm" className="form-label">Name</label>
-                    <input name="name" type="text" className="form-control" id="nameForm" placeholder="John Doe" required />
+                    <input name="Name" type="text" className="form-control" id="nameForm" placeholder="John Doe" required />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="emailForm" className="form-label">Email</label>
-                    <input value={email} onChange={handleEmailChange} name="email" type="email" className="form-control" id="emailForm" placeholder="name@example.com" required />
+                    <input value={email} onChange={handleEmailChange} name="Email" type="email" className="form-control" id="emailForm" placeholder="name@example.com" required />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="messageForm" className="form-label">Message</label>
-                    <textarea name="message" className="form-control" id="messageForm" rows="6" required></textarea>
+                    <textarea name="Message" className="form-control" id="messageForm" rows="6" required></textarea>
                 </div>
                 <input type="hidden" name="_next" value="https://samuelsharivker.com/thanks" />
                 <input type="hidden" name="_subject" value={`New Message From ${input}!`} />
