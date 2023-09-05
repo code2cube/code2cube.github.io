@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './pages/Main';
+import About from './pages/About';
 import Contact from './pages/Contact';
 import ThanksPage from './pages/ThanksPage';
 import NoPage from './pages/NoPage';
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Main />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/thanks" element={<ThanksPage />} />
           <Route path="*" element={<NoPage />} />

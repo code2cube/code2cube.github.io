@@ -3,6 +3,9 @@ import Form from '../components/Form';
 import Footer from '../components/Footer';
 
 function Contact() {
+
+    document.title = "Contact | Samuel Sharivker"
+
     return (
         <div>
             <Nav />
