@@ -28,6 +28,12 @@ nav span,i {
     padding: 0 1em;
 }
 
+.active {
+    background-color: var(--mbc);
+    padding: 0.2em;
+    border-radius: 10px
+}
+
 .poop {
     background-color: var(--fc);
 }
