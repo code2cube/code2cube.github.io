@@ -85,6 +85,10 @@ body {
     color: var(--sbc);
 }
 
+.skills-icons:hover {
+    font-size: 1.3em;
+}
+
 #contact {
     height: 80vh;
     background-color: var(--sbc);
