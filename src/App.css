@@ -82,9 +82,8 @@ body {
 }
 
 .skills-icons {
-    color: black;
+    color: var(--sbc);
 }
-
 
 #contact {
     height: 80vh;
@@ -114,6 +113,49 @@ body {
     text-decoration: none;
 }
 
+#links-page {
+    height: 90vh;
+    color: var(--fc);
+}
+
+.link-container {
+    padding-top: 5vw;
+}
+
+.link-wrapper a {
+    color: var(--fc);
+    text-decoration: none;
+}
+
+.link-wrapper p {
+    background-color: var(--mbc);
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 10px;
+    text-shadow: 5px 5px 6px var(--sbc);
+    font-size: 25px;
+    width: 50%;
+    transform: translateX(25vw);
+}
+
+.link-wrapper p:hover {
+    background-color: #282828;
+    animation-name: linkMove;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes linkMove {
+    0% {
+        transform: translateX(25vw) scale(1);
+    }
+
+    100% {
+        transform: translateX(25vw) scale(1.02);
+    }
+}
+
 .form-label {
     text-shadow: var(--mshadow);
 }
@@ -134,6 +176,30 @@ footer h6 {
 @media only screen and (max-width: 484px) {
     footer {
       padding: 5vh;
+    }
+}
+
+
+@media only screen and (max-width: 389px) {
+    #links-page {
+      height: 100vh;
+    }
+}
+@media only screen and (max-width: 335px) {
+    .link-wrapper p {
+      font-size: 20px;
+    }
+    #links-page {
+        height: 80vh;
+    }
+}
+
+@media only screen and (max-width: 279px) {
+    .link-wrapper p {
+      font-size: 15px;
+    }
+    #links-page {
+        height: 75vh;
     }
 }
 

@@ -29,6 +29,9 @@ function Nav() {
                                 <Link className={`nav-link ${isActiveLink('/contact')}`} to="/contact" onClick={scrollToTop}><i class="bi bi-envelope-fill"></i><span> Contact</span></Link>
                             </li>
                             <li class="nav-item">
+                                <Link className={`nav-link ${isActiveLink('/links')}`} to="/links" onClick={scrollToTop}><i class="bi bi-globe"></i><span> Links</span></Link>
+                            </li>
+                            <li class="nav-item">
                                 <Link class="nav-link" to="https://www.linkedin.com/in/samuel-sharivker-74158028b/" target="_blank" rel="noreferrer"><i class="bi bi-linkedin"></i><span> Linkedin</span></Link>
                             </li>
                         </ul>
