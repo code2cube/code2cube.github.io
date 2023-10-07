@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'live2cubeFont'; /* Name for the font */
+    src: url('./mycustomfont.otf') format('opentype'); /* Path to your .otf file */
+}
+
 :root {
     --mbc: #710C04;
     --sbc: #0A090C;
@@ -74,6 +79,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 1.5em;
+    font-family: live2cubeFont;
 }
 
 #about h1 {
